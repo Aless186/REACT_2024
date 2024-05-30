@@ -1,17 +1,17 @@
 import StiliziranaKartica from "./StiliziranaKartica";
+import { useContext } from "react";
+import Context from "../../context/Context";
 
-const ListaKartica = ({ kartica }) => {
+const ListaKartica = () => {
+  const { kartica } = useContext(Context);
+
   if (!kartica || kartica.length === 0) {
     return <p>Nema sadržaja</p>;
   }
   return (
     <div className="lista-kartica">
       {kartica.map((item) => (
-        <StiliziranaKartica
-          item={item}
-          key={item.id}
-          handleDelete={(id) => console.log(id)}
-        />
+        <StiliziranaKartica item={item} key={item.id} />
       ))}
     </div>
   );

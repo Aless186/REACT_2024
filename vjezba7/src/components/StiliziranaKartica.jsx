@@ -1,7 +1,11 @@
 import Card from "../shared/Card";
 import { FaTimes } from "react-icons/fa";
+import { useContext } from "react";
+import Context from "../../context/Context";
 
-const StiliziranaKartica = ({ item, handleDelete }) => {
+const StiliziranaKartica = ({ item }) => {
+  const { handleDelete } = useContext(Context);
+
   const handleClick = () => {
     handleDelete(item.id);
   };
@@ -10,7 +14,7 @@ const StiliziranaKartica = ({ item, handleDelete }) => {
       <div className="text-display">{item.text}</div>
       <div className="rating">{item.rating}</div>
       <button className="close" onClick={handleClick}>
-        <FaTimes />
+        {<FaTimes />}
       </button>
     </Card>
   );

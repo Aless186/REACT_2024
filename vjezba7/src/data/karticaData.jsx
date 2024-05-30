@@ -2,32 +2,32 @@ const karticaData = [
   {
     id: 1,
     rating: 5,
-    text: "Lorem, ipsum.",
+    text: "lorem ipsum",
   },
   {
     id: 2,
     rating: 3,
-    text: "Lorem, ipsum.",
+    text: "lorem ipsum",
   },
   {
     id: 3,
     rating: 4,
-    text: "Lorem, ipsum.",
+    text: "lorem ipsum",
   },
   {
     id: 4,
     rating: 1,
-    text: "Lorem, ipsum.",
+    text: "lorem ipsum",
   },
   {
     id: 5,
     rating: 3,
-    text: "Lorem, ipsum.",
+    text: "lorem ipsum",
   },
   {
     id: 6,
     rating: 2,
-    text: "Lorem, ipsum.",
+    text: "lorem ipsum",
   },
 ];
 
